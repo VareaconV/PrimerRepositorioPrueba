@@ -1,0 +1,176 @@
+<!DOCTYPE html> <!--Son las reglas que tendrá mi web-->
+<html lang="es"
+
+<head> <!--son las instrucciones que no aparecen escritas en la web. Y tittle es el título que tiene para el navegador--> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"
+    <title>vamosdevino.com</title>
+    <link rel="stylesheet" href="c:\Users\Psvar\Dropbox\ESTUDIOS\4. DAW\4. LENGUAJE DE MARCAS Y SISTEMAS DE GESTIÓN DE INFORMACIÓN\CARPETA TRABAJO ENTREGABLE 1 + FOTOS + CSS\styleTrabajoLenguaje.css">
+</head>
+
+<body> <!--Dentro de esta etiqueta estará realmente lo que es el "cuerpo" de la web-->
+    <header> <h1>¡BIENVENIDO A NUESTRA TIENDA ONLINE: VAMOSDEVINO.COM!</h1> </header>
+    <p class="Imagen1"><img src="logo vamos.jpg" alt="Error al cargar la imagen de vamosdevino.com"></p>
+    <br> <!--Aquí introducimos la url a una imagen para que se carge en la web, y un texto altermativo por si diera error al cargar-->
+    <h3>ANTES DE EMPEZAR A DEGUSTAR NUESTROS PRODUCTOS,<br> PERMITEME MOSTRARTE LAS PARTES PRINCIPALES DE NUESTRA WEB</h3>
+    
+    <ul> <!--con las etiquetas <ul><li> podremos hacer listas en nuestra web-->
+        <li> <a href="#NuestrosInicios">Nuestros inicios</li> </a>   <!--Al poner en href el #loquesea, luego abajo podemos poner dentro de la etiqueta un id = "loquesea" y nos enlaza al pinchar en el enlace-->
+        <li> <a href="#TiendaOnline">Tienda Online</li></a>
+        <li> <a href="#Contacto">Contacto</li></a>
+        <li> <a href="#PoliticaEnvios">Política de Envíos</li></a>
+    </ul>
+    
+    <br><br>
+    <section> 
+        <h3 id = "NuestrosInicios"> NUESTROS INICIOS</h3>
+        <P>Este proyecto surge de la necesidad de exportar al mundo los vinos de una región humilde y trabajadora como es La Mancha. <br>
+        Si vas buscando vinos extremadamente caros, vinos <strong>mainstream</strong> (o como quiera dios que se escriba), ÉSTA NO ES TU WEB.<br>
+        Aquí encontrarás vinos sin florituras, pero que ¡te encantarán! Y además, <em>a los mejores precios del 'interné'</em></P>
+        <p>Nuestra empresa comenzó en 1996, realizando distribución de todo tipo de productos a los bares y restaurantes de la comarca (cervezas, vinos, licores, etc)
+            <br> Al poco tiempo, con el auge de las .com y del transporte, también comenzamos a distribuir todo tipo de paquetería a nivel local, nacional e internacional <br>
+            Como te podrás imaginar, NO hay que ser un lince para poder unir las dos cosas y embarcarnos en este apasionante proyecto que es darte de beber en tu casa, ¡allá donde vivas!
+        </p>
+    </section>
+
+    <section>
+        <br><br>
+        <h3 id = "TiendaOnline">TIENDA ONLINE</h3>
+        <p>En vamosdevino.com somos unos <mark>apasionados</mark> del vino y de los productos gourmet. <em>Y si estás aquí, ¡es porque tu también!</em> <br>
+        Para poder realizar pedidos en la web, es necesario que te registres y nos indiques algunos datos personales ;)</p>
+
+
+        <fieldset> <!--Nos sirve para encuadrar el siguiente formulario (que introduciremos con la etiqueta form)-->
+    <br><h4>Rellena tus datos </h4>			
+    <form action="/procesar_datos.php" method="POST">			
+    <label for="nombre">Nombre</label> <br>		
+    <input type="text" id="Nombre" name="nombre" placeholder="Campo obligatorio" required> <br><br>		
+    <label for="apellidos">Apellidos</label> <br>		
+    <input type="text" id="apellidos" name="apellidos" placeholder="Campo obligatorio" required> <br><br>		
+		
+    <label for="password">Contraseña</label><br> <!--El input type password hace que en nuestro formulario se oculten los caracteres que estamos ingresando-->		
+    <input type="password" id="password" name="password" placeholder="¡No te olvides de mi!" required> <br><br>		
+		
+    <label for="DNI">DNI</label><br> <!--Para el input dni, ponemos type text para que pueda el usuario introducir números y letras-->		
+    <input type="text" id="dni" name="dni" required> <br><br>				
+		
+    <label for="Email">Email</label><br>		
+    <input type="text" id="Email" name="Email" required><br><br>		
+		
+    <label for="FechaNacimiento">Fecha de Nacimiento </label> <!--Para el input fecha ponemos type date para que pueda el usuario tener un calendario desplegable-->		
+    <input type="date" id="FechaNacimiento" name="FechaNacimiento" required><br><br>		
+		
+    <input type="button">		
+    <label for="CheckEdad"> SOY MAYOR DE EDAD </label>		
+    <input type="submit" value="Guardar cambios"> <!--El type submit nos permite enviar el formulario-->		
+    <input type="reset" value="Borrar"> <!--El type reset nos permite borrar el formulario-->		
+  </form>		
+  </fieldset><br><br>
+  <p>
+    ¡PRODUCTOS TOP VENTAS!
+    <ul>
+        <li>Vino Yugo Blanco: desde 1 botella por sólo <strong>3,80 €</strong> <br><button>Agregar al Carrito</button><br> <img src="yugo blanco.jpg" alt="Error al cargar imagen Yugo Blanco"><br><br></li>
+        <li>Vino Yugo Tinto: desde 1 botella por sólo <strong>3,80 €</strong><br><button>Agregar al Carrito</button><br> <img src="yugo tinto.jpg" alt="Error al cargar imagen Yugo Tinto"><br><br></li>
+        <li>Vino Yugo Tinto Reserva: desde 1 botella por sólo <strong>4,90 €</strong><br><button>Agregar al Carrito</button><br> <img src="yugo reserva.jpg" alt="Error al cargar imagen Yugo Reserva"><br><br></li>
+        <li>Boquerones Kiele: desde 1 pack por sólo <strong>6,75 €</strong><br><button>Agregar al Carrito</button><br> <img src="boquerones kiele.jpg" alt="Error al cargar imagen Boquerones Kiele"><br><br></li>
+        <li>Anchodinas Kiele: desde 1 pack por sólo <strong>7,55 €</strong><br><button>Agregar al Carrito</button><br> <img src="anchodina kiele.jpg" alt="Error al cargar imagen Anchodinas Kiele"><br><br></li>
+    </ul>
+  </p>		
+</section>
+
+<section>
+        <h3 id = "Contacto">¡CONTÁCTANOS!</h3>
+        <p>Aquí puedes ver nuestros <strong>datos de contacto:</strong><br><strong>Mail:</strong>contacto@vamosdevino.com<br>
+            <strong>Teléfono:</strong>666 999 666</p>
+            <p>O si lo prefiere, <strong>¡puede rellenar los siguientes datos para que le llamemos nosotros!</strong></p>
+     <form action="/procesar_datos.php" method="POST"> <!--con form introduciremos un formulario en nuestra web-->
+         <label for="nombre">Nombre: </label>
+         <input type="text" id="Nombre" name="nombre" required> <br><br>
+ 
+         <label for="Apellido">Apellido: </label>
+         <input type="Apellido" id="Apellido" int="Apellido" required> <br><br>
+
+         <label for="Telefono">Teléfono: </label>
+         <input type="Telefono" id="Telefono" int="Telefono" required> <br><br>
+
+         <label> ¿Ya es cliente de vamosdevino.com?</label><br>
+         <input type="radio" id="Si" name="Si" value="Si">
+         <label for="Si"> SI </label> <br>
+
+         <input type="radio" id="No" name="No" value="No">
+         <label for="No"> NO </label> <br><br>
+
+         <label for="email">Correo electronico: </label>
+         <input type="email" id="email" name="email" required> <br><br>
+
+         <label for="Asunto">Asunto: </label>
+         <textarea id="Asunto" name="Asunto" rows="1" cols="50"></textarea><br><br>
+
+         <label for="Comentarios">Comentarios: </label>
+         <textarea id="Comentarios" name="Comentarios" rows="6" cols="250"></textarea><br><br>
+
+         <label for="Terminos">Acepto los términos y condiciones: </label>
+         <input type="checkbox" id="terminos" name="terminos"> <br><br>
+ 
+         <input type="submit" value="Enviar"> <!--Estos input checkbox y submit nos permitirán que el usuario interactúe con el formulario para enviar, aceptar términos, etc-->
+     </form>
+    </section>
+<section>
+        <br><br>
+        <h3 id = "PoliticaEnvios">POLÍTICA DE ENVÍOS</h3>
+        <p> Nuestra calidad en los productos nos exige tener a los mejores proveedores para que te lo lleven a casa. Nosotros preparamos en el día todos los pedidos realizados antes de las 18:00.
+        <br>En ese momento, te enviaremos el código de seguimiento de la empresa de transporte que podrás consultar aquí: <a href="https://www.tip-sa.com/es/localizacion-envios"> Seguimiento Tipsa</a> y te llegará a casa en las siguientes 24/48 horas.</p>
+        <p> Aunque los precios de los envíos se calcularán en el proceso de compra, <br> aquí le dejamos una tabla con los <u>precios más usuales</u> según peso y destino.</p>
+        <h4>Precio de envíos</h4>
+        <table border> <!--Con esta etiqueta introduciremos una tabla (y tendrá un borde!)-->
+            <tr>
+                <th>Peso/Destino</th>
+                <th>Madrid</th>
+                <th>Resto peninsula</th>
+                <th>Portugal</th>
+                <th>Islas Baleares</th>
+            </tr>
+            <tr>
+                <td>5 kg</td>
+                <td>5,25 €</td>
+                <td>5,75 €</td>
+                <td>7,12 €</td>
+                <td>9,50 €</td>
+            </tr>
+            <tr>
+                <td>10 kg</td>
+                <td>6,25 €</td>
+                <td>6,75 €</td>
+                <td>8,12 €</td>
+                <td>10,50 €</td>
+            </tr>
+            <tr>
+                <td>15 kg</td>
+                <td>7,25 €</td>
+                <td>7,75 €</td>
+                <td>9,12 €</td>
+                <td>11,50 €</td>
+            </tr>
+            <tr>
+                <td>20 kg</td>
+                <td>8,25 €</td>
+                <td>8,75 €</td>
+                <td>10,12 €</td>
+                <td>12,50 €</td>
+            </tr>
+            <tr>
+                <td>+ de 20 kg</td>
+                <td>9,25 €</td>
+                <td>9,75 €</td>
+                <td>11,12 €</td>
+                <td>13,50 €</td>   
+            </tr>
+        </table>
+    </section>
+    <br><br><br>
+
+    <footer> 2024 Vamosdevino.com Todos los <strong>derechos reservados.</strong> <br> <!--Footer será nuestro "pie de página"-->
+    <a href="#Contacto">Escríbeme </a></footer>
+    <br><br>
+</body>
+</html>
